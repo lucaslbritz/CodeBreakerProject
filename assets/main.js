@@ -88,4 +88,7 @@ function showAnswer(value) {
   code.className += value ? ' success' : ' failure';
 }
 
-//implement new functions here
+function showReplay() {
+  document.getElementById('guessing-div').style.display = 'none';
+  document.getElementById('replay-div').style.display = 'block';
+}

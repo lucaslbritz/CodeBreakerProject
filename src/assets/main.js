@@ -5,8 +5,12 @@ const MULTIPLIER = 10000;
 const ANSWER_LENGTH = 4;
 
 function guess() {
-    let input = document.getElementById('user-guess');
-    //add functionality to guess function here
+  let input = document.getElementById('user-guess');
+
+  if (answer.value === '' || attempt.value === '') {
+    setHiddenFields();
+  }
+
 function setHiddenFields() {
   answer.value = Math.floor(Math.random() * MULTIPLIER);
 

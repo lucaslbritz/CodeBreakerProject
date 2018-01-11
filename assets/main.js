@@ -11,6 +11,12 @@ function guess() {
     setHiddenFields();
   }
 
+  if (validateInput(input.value)) {
+    +attempt.value++;
+  } else {
+    return;
+  }
+
 function setHiddenFields() {
   answer.value = Math.floor(Math.random() * MULTIPLIER);
 

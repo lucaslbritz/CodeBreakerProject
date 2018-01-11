@@ -82,6 +82,10 @@ function getResults(input) {
   return (corrects === ANSWER_LENGTH) ? true : false;
 }
 
+function showAnswer(value) {
+  let code = document.getElementById('code');
+  code.innerHTML = answer.value;
+  code.className += value ? ' success' : ' failure';
 }
 
 //implement new functions here
